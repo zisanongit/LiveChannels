@@ -13,7 +13,7 @@ http://103.199.160.85/Content/moviehouse/Live/Channel(MovieHouse)/index.m3u8
 
 #EXT-X-STREAM-INF:BANDWIDTH=640008,AVERAGE-BANDWIDTH=507513,RESOLUTION=640x360,FRAME-RATE=25.000,CODECS="avc1.64001e,mp4a.40.2",AUDIO="audio_0"
 http://103.199.160.85/Content/moviehouse/Live/Channel(MovieHouse)/index.m3u8
-
+ 
 #EXT-X-STREAM-INF:BANDWIDTH=340008,AVERAGE-BANDWIDTH=275013,RESOLUTION=426x240,FRAME-RATE=25.000,CODECS="avc1.640015,mp4a.40.2",AUDIO="audio_0"
 http://103.199.160.85/Content/moviehouse/Live/Channel(MovieHouse)/index.m3u8
 
