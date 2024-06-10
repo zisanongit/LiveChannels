@@ -1,1 +1,34 @@
-#EXTM3U #EXT-X-TARGETDURATION:6 #EXT-X-VERSION:3 #EXT-X-MEDIA-SEQUENCE:29758 #EXT-X-PROGRAM-DATE-TIME:2024-06-09T20:05:21Z #EXTINF:5.200, tg_aadi.php?tv=http://kdz-prm-ld.ssltv.net:8273/8be1228d28529a51b7b4ba3e2bd4670e5a72a6619d25134f2e7114fb18aabaa8735ed9e1/tracks-v1a1/2024/06/09/20/05/21-05200.ts?token=cd61f0a872b743f82c4f02b6a2d6a360d634c312ba12350a35d6a9bd516f63999b687a27f76b010d0efd6eab186f41ed05cc9ffed30e25ebf531cfdda0af2b2cc5fe-84be03219b4efea04e1fe08ca57fab2a #EXTINF:5.200, tg_aadi.php?tv=http://kdz-prm-ld.ssltv.net:8273/8be1228d28529a51b7b4ba3e2bd4670e5a72a6619d25134f2e7114fb18aabaa8735ed9e1/tracks-v1a1/2024/06/09/20/05/26-05200.ts?token=cd61f0a872b743f82c4f02b6a2d6a360d634c312ba12350a35d6a9bd516f63999b687a27f76b010d0efd6eab186f41ed05cc9ffed30e25ebf531cfdda0af2b2cc5fe-84be03219b4efea04e1fe08ca57fab2a #EXTINF:5.200, tg_aadi.php?tv=http://kdz-prm-ld.ssltv.net:8273/8be1228d28529a51b7b4ba3e2bd4670e5a72a6619d25134f2e7114fb18aabaa8735ed9e1/tracks-v1a1/2024/06/09/20/05/31-05200.ts?token=cd61f0a872b743f82c4f02b6a2d6a360d634c312ba12350a35d6a9bd516f63999b687a27f76b010d0efd6eab186f41ed05cc9ffed30e25ebf531cfdda0af2b2cc5fe-84be03219b4efea04e1fe08ca57fab2a #EXTINF:5.200, tg_aadi.php?tv=http://kdz-prm-ld.ssltv.net:8273/8be1228d28529a51b7b4ba3e2bd4670e5a72a6619d25134f2e7114fb18aabaa8735ed9e1/tracks-v1a1/2024/06/09/20/05/36-05200.ts?token=cd61f0a872b743f82c4f02b6a2d6a360d634c312ba12350a35d6a9bd516f63999b687a27f76b010d0efd6eab186f41ed05cc9ffed30e25ebf531cfdda0af2b2cc5fe-84be03219b4efea04e1fe08ca57fab2a
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HLS Streaming with GitHub Pages</title>
+    <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
+</head>
+<body>
+    <video id="video" class="video-js vjs-default-skin" controls preload="auto" width="auto" height="auto"></video>
+    
+    <script src="https://unpkg.com/video.js/dist/video.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script>
+        var video = document.getElementById('video');
+        var videoSrc = 'http://xtv.ooo:8080/live/mahendra44/mhnd1234/112979.ts';
+        
+        if (Hls.isSupported()) {
+            var hls = new Hls();
+            hls.loadSource(videoSrc);
+            hls.attachMedia(video);
+            hls.on(Hls.Events.MANIFEST_PARSED,function() {
+                video.play();
+            });
+        }
+        else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+            video.src = videoSrc;
+            video.addEventListener('canplay',function() {
+                video.play();
+            });
+        }
+    </script>
+</body>
+</html>
