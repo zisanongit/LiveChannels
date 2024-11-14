@@ -1,6 +1,1 @@
-#EXTM3U
-#EXT-X-VERSION:3
-
-https://drive.usercontent.google.com/download?id=1cgXEepenUvls0dJWKZONeezbChvWLSIB&export=download&confirm=t&uuid=d1c27d97-1481-4a35-a8a2-a43cfe59c8ba
-
-
+#EXTM3U #EXT-X-VERSION:3 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1024000,RESOLUTION=1280x720 ?url=https://bldcmprod-cdn.toffeelive.com/cdn/live/slang/sony_aath_576/sony_aath_576.m3u8?bitrate=1000000&channel=sony_aath_576&gp_id= #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=768000,RESOLUTION=854x480 ?url=https://bldcmprod-cdn.toffeelive.com/cdn/live/slang/sony_aath_320/sony_aath_320.m3u8?bitrate=768000&channel=sony_aath_320&gp_id= #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=512000,RESOLUTION=640x360 ?url=https://bldcmprod-cdn.toffeelive.com/cdn/live/slang/sony_aath_160/sony_aath_160.m3u8?bitrate=512000&channel=sony_aath_160&gp_id=
